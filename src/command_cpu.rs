@@ -9,7 +9,7 @@ pub fn run() -> WeaveResult<()> {
         s
     };
     let processors = system.get_processors();
-    let ramp = [' ', '▁', '▂', '▃', '▄', '▅', '▆', '▇', '█'];
+    let ramp = ['▁', '▂', '▃', '▄', '▅', '▆', '▇', '█'];
     let ramp_step = 100.0 / ramp.len() as f32;
     for processor in processors {
         let ramp_char_i = (processor.get_cpu_usage() / ramp_step)

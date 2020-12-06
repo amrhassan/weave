@@ -1,1 +1,2 @@
-# weave
+# weave #
+Extensions for status bars
